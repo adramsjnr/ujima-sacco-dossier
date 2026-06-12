@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Architecture Dossier - Ujima SACCO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* CORE SETUP */
+        * { box-sizing: border-box; }
+        body { background-color: #f1f5f9; display: grid; gap: 25px; grid-template-columns: 1fr; margin: 0; min-height: 100vh; padding: 40px 0; place-items: center; }
+
+        .slide-container {
+            width: 1280px; height: 720px;
+            background-color: #fff;
+            color: #1a202c;
+            font-family: 'DM Sans', sans-serif;
+            overflow: hidden;
+            position: relative;
+            display: flex; flex-direction: column;
+            padding: 60px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CONSISTENT TYPOGRAPHY */
+        h1, h2, h3 { font-family: 'Merriweather', serif; color: #003366; margin: 0; }
+        h1 { font-size: 64px; text-align: center; margin-bottom: 20px; }
+        .slide-title { font-size: 40px; margin-bottom: 35px; border-left: 8px solid #D4AF37; padding-left: 20px; }
+        p, li { font-size: 20px; line-height: 1.6; color: #4a5568; }
+        .subtitle { font-size: 24px; text-align: center; color: #64748b; }
+
+        /* DECORATIVE ELEMENTS */
+        .slide-container::after {
+            content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 12px;
+            background: linear-gradient(90deg, #003366 0%, #D4AF37 100%);
+        }
+
+        /* LAYOUTS */
+        .content-area { flex-grow: 1; width: 100%; display: flex; flex-direction: column; justify-content: center; }
+        .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; align-items: start; }
+        
+        /* Tiled Text */
+        .tiled-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; width: 100%; }
+        .tile { background: #f8fafc; border: 1px solid #e2e8f0; padding: 25px; border-radius: 8px; }
+        .tile .icon { font-size: 32px; color: #D4AF37; margin-bottom: 15px; }
+        .tile h3 { font-size: 22px; margin-bottom: 10px; }
+
+        /* Images */
+        .image-wrapper { border-radius: 8px; overflow: hidden; height: 100%; width: 100%; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        .image-right-text-left .image-wrapper img { object-fit: contain; }
+
+        /* Bleed Image Layout */
+        .bleed-image-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; align-items: start; }
+        .bleed-image-layout .content-container { padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+        .bleed-image-side { width: 100%; height: 720px; object-fit: cover; }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background: #003366; color: white; padding: 15px; text-align: left; }
+        td { border-bottom: 1px solid #e2e8f0; padding: 15px; }
+
+        /* Formulas */
+        .formula-container { background: #fdf6e3; padding: 20px; border-radius: 8px; border-left: 5px solid #D4AF37; margin: 20px 0; display: flex; justify-content: center; }
+
+        /* BACKGROUND EFFECTS */
+        .bg-gradient { position: absolute; top: -10%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, rgba(255,255,255,0) 70%); z-index: 0; }
+    </style>
+</head>
+<body>
+
+<div class="slide-container" id="slide1">
+    <div class="bg-gradient"></div>
+    <div class="content-area" style="text-align: center;">
+        <h3 style="letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px;">Phase 3: Ethical Savannah</h3>
+        <h1>Ethical Architecture Dossier</h1>
+        <div style="width: 100px; height: 4px; background: #D4AF37; margin: 20px auto;"></div>
+        <p class="subtitle">Embedding Conscience into the Ujima AI Lending Pride</p>
+        <p style="margin-top: 40px; font-weight: 700; color: #003366;">Regulatory Review Candidate: SASRA & ODPC Compliance</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide2">
+    <h2 class="slide-title">Mission: Dignity-Centered Design</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <h3>Objective</h3>
+                <p>Transition from an "Ethically Blind" model focused solely on risk, to a "Dignity-Centered" architecture that respects human agency and local economic realities.</p>
+                <ul style="margin-top: 20px;">
+                    <li><strong>Conscience:</strong> Embedding moral guardrails at the prompt level.</li>
+                    <li><strong>Compliance:</strong> Aligning with Kenya Data Protection Act 2022.</li>
+                    <li><strong>Community:</strong> Empowering an Elders Council for governance.</li>
+                </ul>
+            </div>
+            <div class="tile" style="background: #e6f0ff; border-color: #003366;">
+                <h3 style="color: #003366;">Key Performance Goal</h3>
+                <p>Projected <strong>37% increase</strong> in female vendor loan approvals by correcting historical data bias without increasing default risk beyond 3%.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide3">
+    <h2 class="slide-title">ETHOS: Transforming Prompt Logic</h2>
+    <div class="content-area">
+        <div class="two-column" style="grid-template-columns: 1fr 1.5fr;">
+            <div class="tile">
+                <h3 style="color: #dc2626;"><i class="fa-solid fa-eye-slash"></i> Ethically Blind</h3>
+                <p style="font-family: monospace; font-size: 16px;">"Screen loan applicants for risk based on income and occupation."</p>
+                <p style="font-size: 14px; margin-top: 10px;"><em>Risk: Automatically penalizes informal traders due to lack of payslips.</em></p>
+            </div>
+            <div class="tile" style="border-left: 8px solid #059669;">
+                <h3 style="color: #059669;"><i class="fa-solid fa-heart-pulse"></i> Dignity-Centered</h3>
+                <p style="font-family: monospace; font-size: 16px;">"Act as Chief Ethics Officer. Apply <strong>ETHOS</strong>: (E) Identify vulnerable groups; (T) Demand reasoning for denial; (H) Model food security impact; (O) Design human audit trail; (S) Ensure DPA 2022 sovereignty."</p>
+                <p style="font-size: 14px; margin-top: 10px;"><em>Result: Evaluates informal cash flows through a lens of socio-economic preservation.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide4">
+    <h2 class="slide-title">TRACK Audit: Bias Identification</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 25px;">
+                        <strong style="color: #003366;">(T) Training Data:</strong>
+                        <p>Found 82% urban-centric bias. Informal traders represented only 12% of training corpus despite making up 65% of SACCO volume.</p>
+                    </li>
+                    <li>
+                        <strong style="color: #003366;">(R) Representation:</strong>
+                        <p>Missing taxonomy: "Shea butter trader" and "Matooke intermediary" were misclassified as "Unemployed."</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-wrapper">
+                <img src="vendor.jpeg" alt="Market woman vendor in Kenya">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide5">
+    <h2 class="slide-title">TRACK Audit: Algorithmic Fairness</h2>
+    <div class="content-area">
+        <div class="tiled-content">
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-volume-high"></i></div>
+                <h3>(A) Amplification</h3>
+                <p>Identified model tendency to amplify "High Risk" scores for women vendors based on historical exclusion from formal banking.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                <h3>(C) Counterfactuals</h3>
+                <p>Test: If a "market vendor" has identical cash flow to a "formal employee," the model must grant equal approval rates.</p>
+            </div>
+            <div class="tile">
+                <div class="icon"><i class="fa-solid fa-power-off"></i></div>
+                <h3>(K) Kill Switch</h3>
+                <p>Immediate freeze on automated denials from <strong>Busia County</strong> pending human audit due to detected data pipeline failures.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide6">
+    <h2 class="slide-title">OASIS: Data Sovereignty Charter</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-wrapper">
+                <img src="sovereignty.jpeg" alt="Data Sovereignty Shield">
+            </div>
+            <div>
+                <table style="font-size: 16px;">
+                    <tr>
+                        <td><strong>Opt-in</strong></td>
+                        <td>Clear Swahili consent via USSD before any data training.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Anonymization</strong></td>
+                        <td>k-anonymity depth ensuring re-identification is impossible.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sovereignty</strong></td>
+                        <td><strong>AWS Africa</strong> storage only. No transit.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Security</strong></td>
+                        <td>End-to-end encryption for USSD/SMS channels.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide8">
+    <h2 class="slide-title">PRIDE Loop: Human Calibration</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <h3>(P) Pause Points</h3>
+                <ul style="margin-top: 10px;">
+                    <li>Mandatory human review for loans <strong>&gt;KES 50,000</strong>.</li>
+                    <li>Escalation for applicants with children under 5 (Food Security Filter).</li>
+                </ul>
+                <h3 style="margin-top: 30px;">(I) Interpretability</h3>
+                <div class="tile" style="background: #f1f5f9;">
+                    <p style="font-family: serif; color: #003366;">"Explain denials like a village elder: 'Your income dips during school fee season; we need 3 months of buffer.'"</p>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="governance.jpg" alt="Governance Meeting">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide9">
+    <h2 class="slide-title">Governance & Appeal Rights</h2>
+    <div class="content-area">
+        <div class="tiled-content">
+            <div class="tile">
+                <h3 style="color: #003366;">(D) Disagreement</h3>
+                <p>USSD code <strong>*#123#</strong> allows any member to instantly bypass the AI and request a human review of their denial.</p>
+            </div>
+            <div class="tile">
+                <h3 style="color: #003366;">(E) Elders Council</h3>
+                <p>Governing body consisting of: 3 SACCO managers, 2 market vendors, and 1 fintech regulator for quarterly audits.</p>
+            </div>
+            <div class="tile">
+                <h3 style="color: #003366;">(R) Review Cadence</h3>
+                <p>Quarterly fairness audits conducted with the <strong>SASRA Compliance Team</strong> to track bias metrics.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide10">
+    <h2 class="slide-title">HORIZON: 10-Year Ecosystem Impact</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="image-wrapper">
+                <img src="plantation.jpg" alt="Sustainable Matooke Plantation">
+            </div>
+            <div>
+                <ul style="font-size: 18px;">
+                    <li><strong>Historical Harm:</strong> Does this replicate colonial extraction of African data? <em>(Design: Data stays in Africa)</em></li>
+                    <li><strong>Opportunity Cost:</strong> Will it erode Chama culture? <em>(Design: Agent encourages communal savings)</em></li>
+                    <li><strong>Ripple Effects:</strong> Impact on children's school attendance. <em>(Design: School fee lending cycles)</em></li>
+                    <li><strong>Non-Human:</strong> Carbon cost of servers vs. drought impact. <em>(Design: Efficiency optimization)</em></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide11">
+    <h2 class="slide-title">Projected Ethical Outcomes</h2>
+    <div class="content-area">
+        <div class="table-layout">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Baseline</th>
+                        <th>With Ethical Stack</th>
+                        <th>Target Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vendor Approval Rate</td>
+                        <td>22%</td>
+                        <td>59%</td>
+                        <td>Increase in vendor liquidity</td>
+                    </tr>
+                    <tr>
+                        <td>Gender Bias Variance</td>
+                        <td>14.2%</td>
+                        <td>&lt;1.5%</td>
+                        <td>Gender-neutral scoring</td>
+                    </tr>
+                    <tr>
+                        <td>Regulatory Audit Time</td>
+                        <td>3 Weeks</td>
+                        <td>Instant (OASIS Trail)</td>
+                        <td>Operational Efficiency</td>
+                    </tr>
+                    <tr>
+                        <td>Data Sovereignty</td>
+                        <td>Unknown</td>
+                        <td>100% (AWS Africa)</td>
+                        <td>DPA 2022 Compliance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide12" style="background-color: #003366;">
+    <div class="content-area" style="text-align: center; color: white;">
+        <h2 style="color: #D4AF37; font-size: 56px;">Ready for Review</h2>
+        <p style="color: #fff; font-size: 24px; margin-top: 20px;">This Ethical Architecture Dossier is aligned with SASRA 2026 Consumer Protection Frameworks and the Kenya ODPC Guidelines.</p>
+        <div style="margin-top: 40px;">
+            <i class="fa-solid fa-file-contract" style="font-size: 80px; color: #D4AF37;"></i>
+        </div>
+        <p style="margin-top: 40px; font-family: 'DM Sans'; letter-spacing: 2px;">SECURE • ETHICAL • SOVEREIGN</p>
+    </div>
+</div>
+
+</body>
+</html>
+
